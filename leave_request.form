@@ -1,0 +1,57 @@
+{
+  "components": [
+    {
+      "label": "Employee Name",
+      "type": "textfield",
+      "key": "employeeName",
+      "description": "Enter your full name.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Leave Date",
+      "type": "textfield",
+      "key": "leaveDate",
+      "description": "Enter the date in YYYY-MM-DD format.",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Leave Type",
+      "type": "select",
+      "key": "leaveType",
+      "values": [
+        {
+          "label": "Casual Leave",
+          "value": "casual"
+        },
+        {
+          "label": "Sick Leave",
+          "value": "sick"
+        },
+        {
+          "label": "Earned Leave",
+          "value": "earned"
+        }
+      ],
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Reason for Leave",
+      "type": "textarea",
+      "key": "reason",
+      "description": "Briefly explain why you need leave.",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default",
+  "id": "leave-request-form",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.7.0"
+}
